@@ -8,7 +8,7 @@ public class Train {
 
 	public Train(code, electric, engine, battery) {
 		this.code = code;
-		inService = true;
+		this.inService = true;
 		this.electric = electric;
 		this.engine = engine;
 		this.battery = battery;
