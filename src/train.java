@@ -1,44 +1,44 @@
 public class Train {
-	
-	private String code;
-	private boolean inService;
-	private boolean electric;
-	private boolean engine;
-	private boolean battery;
 
-	public Train(code, electric, engine, battery) {
-		this.code = code;
-		this.inService = true;
-		this.electric = electric;
-		this.engine = engine;
-		this.battery = battery;
-	}
+  private String code;
+  private boolean inService;
+  private boolean electric;
+  private boolean engine;
+  private boolean battery;
 
-	
-	public String getCode() {
-		return code;
-	}
-	
-	public boolean isInService() {
-		return inService;
-	}
+  public Train(String code, boolean electric, boolean engine, boolean battery) {
+    this.code = code;
+    this.inService = true;
+    this.electric = electric;
+    this.engine = engine;
+    this.battery = battery;
+  }
 
-	public void declareBroken() {
-		inService = false;
-	}
+  public String getCode() {
+    return code;
+  }
 
-	public void declareInService() {
-		inService = true;
-	}
+  public boolean isInService() {
+    return inService;
+  }
 
-	public boolean isElectric() {
-		return electric;
-	}
+  public void declareBroken() {
+    inService = false;
+  }
 
-	public boolean isEngine() {
-		return engine;
-	
-	public boolean isBattery() {
-		return battery;
-	}
+  public void declareInService() {
+    inService = true;
+  }
+
+  public boolean isElectric() {
+    return electric;
+  }
+
+  public boolean isEngine() {
+    return engine;
+  }
+
+  public boolean isBattery() {
+    return battery;
+  }
 }
